@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_956524_kyc_exp_0.user" name="x_956524_kyc_exp_0.user">e1424a768313621004126260ceaad3ce</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 08:46:31</sys_created_on>
+        <sys_id>69424a768313621004126260ceaad3cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>e1424a768313621004126260ceaad3ce</sys_name>
+        <sys_package display_value="KYC express" source="x_956524_kyc_exp_0">a1424a768313621004126260ceaad39c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_update_name>sys_embedded_help_role_69424a768313621004126260ceaad3cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 08:46:31</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

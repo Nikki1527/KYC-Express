@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>28000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automates the KYC process from submission to approval</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>kyc_application_process</internal_name>
+        <label_cache>[{"name":"{{static.0a826bf03710200044e0bfc8bcbe5d7a}}","label":"Adela Cervantsz","reference":"sys_user","reference_display":null,"type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0}],"usedInstances":{"4406611d-3a5e-45be-b0f5-d613974d9ebb":["approval_conditions"]},"attributes":null},{"name":"4406611d-3a5e-45be-b0f5-d613974d9ebb.approval_state","label":"3➛Approval State","reference":null,"reference_display":"Approval State","type":"choice","base_type":"choice","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"90dce269-7f34-41d8-8499-0e8afabda973.record.customer","label":"1 - Update Record➛KYC case Record➛Customer","reference":"x_956524_kyc_exp_0_kyc_case","reference_display":"Customer","type":"reference","base_type":"reference","parent_table_name":"x_956524_kyc_exp_0_kyc_case","column_name":"customer","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"7d5b9fc7-0800-4ee2-bdf8-607caacc1d9c":["ah_to"],"60a7bb3c-a32e-4a4a-877c-810f702c1e74":["ah_to"]},"attributes":null},{"name":"{{static.62826bf03710200044e0bfc8bcbe5df1}}","label":"Abel Tuter","reference":"sys_user","reference_display":null,"type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"4406611d-3a5e-45be-b0f5-d613974d9ebb":["approval_conditions"]},"attributes":null},{"name":"Created_1.current.customer","label":"Trigger - Record Created➛KYC case Record➛Customer","reference":"x_956524_kyc_exp_0_kyc_case","reference_display":"Customer","type":"reference","base_type":"reference","parent_table_name":"x_956524_kyc_exp_0_kyc_case","column_name":"customer","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"112d585a-9b69-47f1-aa8f-cc2600a38b2b":["ah_to"]},"attributes":null},{"name":"Created_1.current","label":"Trigger - Record Created➛KYC case Record","reference":"x_956524_kyc_exp_0_kyc_case","reference_display":"KYC case","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"112d585a-9b69-47f1-aa8f-cc2600a38b2b":["record"],"65c15428-6021-4d13-9564-7a54a9b109c0":["record"],"ad1f4aa2-502f-4a68-ab6e-3917c3978f69":["record"],"7d5b9fc7-0800-4ee2-bdf8-607caacc1d9c":["record"],"90dce269-7f34-41d8-8499-0e8afabda973":["record"],"4406611d-3a5e-45be-b0f5-d613974d9ebb":["record"],"60a7bb3c-a32e-4a4a-877c-810f702c1e74":["record"]},"attributes":{"":""}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>KYC Application Process</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 13:33:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e8e3c77a8357621004126260ceaad386</sys_id>
+        <sys_mod_count>72</sys_mod_count>
+        <sys_name>KYC Application Process</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="KYC express" source="x_956524_kyc_exp_0">a1424a768313621004126260ceaad39c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_update_name>sys_hub_flow_e8e3c77a8357621004126260ceaad386</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-16 03:28:04</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2025-08-15 20:27:55">d8f2c6cf8317a21004126260ceaad3f5</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e8e3c77a8357621004126260ceaad386"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e8e3c77a8357621004126260ceaad386"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e8e3c77a8357621004126260ceaad386"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e8e3c77a8357621004126260ceaad386^sys_idNOT IN68e3c77a8357621004126260ceaad387"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e8e3c77a8357621004126260ceaad386</id>
+        <name>KYC Application Process</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 13:33:09</sys_created_on>
+        <sys_id>68e3c77a8357621004126260ceaad387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 13:33:09</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=68e3c77a8357621004126260ceaad387"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e8e3c77a8357621004126260ceaad386^sys_idNOT IN4e45c7fa8357621004126260ceaad33f,7d45c7fa8357621004126260ceaad308"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="KYC Application Process">e8e3c77a8357621004126260ceaad386</model>
+        <model_id>e8e3c77a8357621004126260ceaad386</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e8e3c77a8357621004126260ceaad386</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 13:39:16</sys_created_on>
+        <sys_id>4e45c7fa8357621004126260ceaad33f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 13:39:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4e45c7fa8357621004126260ceaad33f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="KYC Application Process">e8e3c77a8357621004126260ceaad386</model>
+        <model_id>e8e3c77a8357621004126260ceaad386</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e8e3c77a8357621004126260ceaad386</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 13:39:15</sys_created_on>
+        <sys_id>7d45c7fa8357621004126260ceaad308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 13:39:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7d45c7fa8357621004126260ceaad308"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e8e3c77a8357621004126260ceaad386"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e8e3c77a8357621004126260ceaad386"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e8e3c77a8357621004126260ceaad386^sys_idNOT IN954507fa8317621004126260ceaad3bb"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="KYC Application Process">e8e3c77a8357621004126260ceaad386</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 13:39:14</sys_created_on>
+        <sys_id>954507fa8317621004126260ceaad3bb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 13:40:35</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/91Z227jNhD9FUFPLeACuvgS521rZ9GgaYLa3hZFkAqUSNpEaMqVKCXeIP9eUhfrRju+yIskT4lJkXPmcObMULp/0SlwEdUv9ZHPIOHEZ3pHJ4yjgAE6W6+QmPLyqVDMLQGDgPvBWr/EgIaoo+PAX87QckUBR5tBP4Ao0C9Nw+joMaARmq7Dayg2E1swsKxsq2ePiLF/r/4UvyAJxW7rvyqD3oJQGCCmX94/dPQVCMQuXNp42eC9IewxNVF9mEjD/T4AEAHDs03bsgzDuuiabt92TQvaALlYrFJxoQDLFbTIsZv6cjlRJgI9c8QgghuWmmQGCMA7RouBhXAu9WkJnkPyXVjuGnKzAGEkPPRQOrv56WTspcN4DDiY8iDyeBSgnByfeChMuYEIg4jyUXksfeBulfibLOHApflqn0ZLdpvSom82yA9LjEShAIFW0lWJXRiXUTJd+E+THORXwhJaMiep7wG6+QU4D4gbcQnnRX8CjIcO9x0AoVPi/FKXG0tefIjouLAnxsl8jgKHsFXEQ/21o4frcERBGBaoBV3Of5E0mvqQrXYSh1Nv5TovICv+xeMkzkP7tVPkTBAxscDZHGszcxIiN5TfkFDgu3/Rcc5W5gLOQ2cSMc1nmhcFgiauifDQ8t21BJUMKXy9BPPMDzxFFHm8FFP4W1j+9QcJQ8LmJfQb48lI0zpdlyGkXJxm9KFN2WiSHtf8qclHC9phmhi7CFvGQCqHadguNo2B0QMY2obhWSXtaMLbipvXgqSiIfngWfSjHfUoEmFX4NRPJ3PIKCfSXmEfV3MmJ+ZVJWInQTNbgma9NrXUPkhMNxGdDo+rgb3LtZoG5zl3rAgDGAOxAuY+Hq6pe8oppv6TEO4jpBT7AZoHfsRgXdLknhoRfytPtCSiLvAed5stntB+yg7y5/cmqAXteSgDtj6LlNrYdIeoiwyhoLYQT7c3HLoesDAe9AfIMmtSWgBTov1cEvpGxMSqkNsmp8qgj1W5coCQngCwIaoHAzxdTrOYVoppOvdRZfNpgZgjwAcOlcLYUM85JRDlc+1KR8N0XIhF+/KBL4ZezxwMvIG4wQn5wF3kArNr9cBw0LcvejX5aIDbBZwruCoLyk069ENudCJMEmxbhOVbOvUObncfK0VCxLmso4e3F8nzIDVQKvTyZLVEzvxAk6eiXRcPalMkynbyzqC1dsPni0ajIUz/KsYrpmWjeuuzXxRw2rxDMnGl2YeaLVDeWx9UC5K4yvoZLpaoe9EbYlstZ3iokrMC3nbgn6cv2jOK4q3xqGqQ9s3aWJn8WzuaI/KwFmHlVmdHL9YWKWbrpFjnI8U+uf/L03jrbfoYsB+6Hibtz/FF0WfI8bFS9AnWsvewCGruWuMLJOiloukXpjRpt80ylHbvjaoohrWsi2qv4Ema626PfU1MaMEPcfw8Va8WCud+D4DgAPR69pZGflh/D6CC+IYHn6cGHhxdsSpYdxbCw/at76kshaXkqwbTnkWuVa/Vle40r5W17i2vT69iu95iKFB8xPo0y95i1+pRwpGTpH0lObMvjLsUcKv+1b8FPDvDXr9ndZ3Hteeg55VjJP95QPVp6fd/Rlo2c6oeetgDQwtt+TxtGCU9zNmpecAVJJU1L1mm3aYTBS+7VC8ldh/Ru/hIX6RPzQFMqDhRJ2U69KMgcXlyNbqbjJ2/v8xGv11NnMnVdDa5Hs2uxkfmSMbaV4IozN8IrcTJIOi4UgFUOfTwP9u3Os3SIQAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e8e3c77a8357621004126260ceaad386^sys_idNOT IN110fd33a8397621004126260ceaad303,28b92bba831b621004126260ceaad3da,31a22772831b621004126260ceaad3bb,6cd50bba8357621004126260ceaad36a,759fe3b2835b621004126260ceaad3a4,8befebb2835b621004126260ceaad319,99e7a33a831b621004126260ceaad387"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="KYC Application Process">e8e3c77a8357621004126260ceaad386</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 15:31:44</sys_created_on>
+        <sys_id>110fd33a8397621004126260ceaad303</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 17:11:15</sys_updated_on>
+        <ui_id>b8c11113-0ec5-44b7-bae8-81135f5741cd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TXU/bMBT9K5Wfq8pJ2pT2baJCmsZAAoQ0AYtu7Buw5nzMdko7xH/fTeK0HTBUJB6GtDzF98vnHN9z9cCUZHM2RsmDWRCLKIiikPPwYBykcZQGoYwAMWBDVkCOVGlQlEbSeQm6bgKYTSfTaQoH0SSNw4DzcRDGYcwFAsgonVKpVLbSsL70HRQRd0pLgwWbX90MWQWGhjs0bP7wJLUvOg0paio96+E9hevWVXOWpahzLFyi+uCx71z4zODzgjLU1MAJ+JDhymEhkYBkoC0OWQ6FBFeaNZs7U1PAIMjTQq83FXeqcB3RHFZW/aKbx7ypy5CYCS/C5ph4gbpwtgAH5zRZuNps9CqVQNtpIjGDWrvD3VhXcFo5VRZdi4NU992lrvPipFOEbQbsvEdtCQRWDc8GeUcrO78r7896kEeqaCXxFHUpQG9O4JxRae0aOA8MNbYa51BVqrhNKlMuVdtMUPLRrabDKNPlPd1p1W0xAtHgHpGqMDqi+KINX4JRDYmvNIaaH4fMru2hBmu3VEjD5GfdIOmIeQpJq0IrQdJuQtMsjKrcJ7pqiR7449DvPw9f3TDcLlS79nZn/60DV9vrmvNIdq/wnRASfJSJK7v4cw/s2fU2n+zBovfJkUIt7Qu0vE8c5gTXYdLR/NMqFz45uPTJjVvezS5BzNvvv2n+XdOkk9fWTcy227Uzc2ucVTKbxJNwnPxYiwRXVcLbPwEWn/vly7fDgc+8zRN7gOw9cdE+/suge1s8jR3v9g5OuoS3w+Td3HDwkXzgaXx4I/xt/W9+AykSbmw1CQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=110fd33a8397621004126260ceaad303"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="KYC Application Process">e8e3c77a8357621004126260ceaad386</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>d2717315-7a97-4733-8417-07b21b47de2e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 16:18:22</sys_created_on>
+        <sys_id>28b92bba831b621004126260ceaad3da</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 16:19:57</sys_updated_on>
+        <ui_id>ad1f4aa2-502f-4a68-ab6e-3917c3978f69</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TW2viQBj9KzLPISRGpfq2KMKy3RbaIizdEiYzX3TYyWXnYnXF/75fkkm09oKFPmxhffK7zjkn37nfEcHJhAyAB+E4HLEojKJ+EPQvBmEyipKwzyMKEBKP5DQD7FTACsUxXlNpq8RuN1VADfA49JlVCnKz32OdC11Kul24NsywlZAc62Ry/+CRkircaECRye6kdC4kSROQ2HrTYjrFaLZlFfOC2QxxxaJNXrrJmav0vs6wgkMVnDDwCGwM5BwQSEqlBo9kNOfUFGpLJkZZTCBpfp3LbdexErlpiGZ0o8UffHkQVH0pIDPmROjC2AnUpNMZNfQWNzNjVadXIRjoRhMOKbXSTI9zTcN1aUSRNyOGJrKdLqTN8qtGEdItOPoeViMIKCueFfKGVnq7Kh5vWpBzkdeSOIqyYFR2ETVGicSaCs6OgIRa44yWpciXcamKtaiHEUrmLyUGfiqLR3xTi2XuU1bh9lFV6s8xP6vTC6pEReI7rsHhvUf0Vk8l1fpABTWMf9sKSUPMUYhrFWoJ4voSqmGmRGm+4FNrcMD3njv6oP/mhcHhoOpb10dHrw01Vv+0QRBxBIpUgT+/+Ve63ueDM1C2PpgLkFy/ANv5wECG8AzEDY2nVrhzxd7CFTs3fJgdwlFQ//6b4t81RTJ869zY+HBdRzsPxtjE4+Fo2B/Ev7Yshk0ZB/U/RjU898e3H9Oeq7zPE2eAbD1xV3/8l0G3tjjNXR7P9q6agrPD8MPccPGZfOBofHojvHb+D38BGj06qQoJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=28b92bba831b621004126260ceaad3da"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="KYC Application Process">e8e3c77a8357621004126260ceaad386</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 15:47:36</sys_created_on>
+        <sys_id>31a22772831b621004126260ceaad3bb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-16 03:27:53</sys_updated_on>
+        <ui_id>4406611d-3a5e-45be-b0f5-d613974d9ebb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y227bOBD9FYPPjpe6Ws5bECNA99ICSVpgEQcCRVIJd2lJFcU2XsH/viORslQ7dZ2NAzSLvBjmDDk+c3gOSPqmRoKhU8T90AvgY5p62HEdHPEwiugMExqFYeB7aIwysuQwkxRFmX8hMi45UXkGCRjoJgNfmVCFJKtPfYTeC8lKnqHTm9sxKkgJVSpeotN6K3UoDEkSLmHqmcUxuuxwfBdgtSqahKpKkd3Z8e+2zFUXzEvWwHLHiD9UPGMc8KREKj5GS5IxUuXlahOB0uxDJvvAvcgq0/CSPCjxD/yeE+JmYsqhRWrZ2Axjy5QJp3NSEUCiaaXLDXG5oFwZchhPiZbV+TBmJnwoKgFNtksqkshudS71MntvGEGbAoON0QpA8KLptIFu+0iv7vOvlx3KC5G1pNikzCmRmxGpgLpEVw2eGmlx/RirXPIl1I+XsCsQiZutEW1NgLic3EkYTFKZfwUsStxlE0KbfibAN5lcQHzehj+RUjTN/QFlYPHY/txwU7X4mInPmr9rdBS6STjDETthKU5O/MgLTgjl+ISHTsADFtLA8dB6jNRKnUuiVE8U7FD8WTdtGtosQbHhuFlCS1FUZwDzC7dcrMfWRdhJXT6buThxMPYwjgKKI48n3jSceoRFj4g0FVyy45roABQ7JrqwML4Hz1qoHcbtpG9t1K4fvTeJo1spwvg1eQl+/DlWehnPPF3thoIfSJ7uFRsfHBx/5brMXkbxB4DoFP+rQbEt+G1w/0Xv3pve//96n0b7pEZxL6mSUxDGQOh1fQ6bX3EWOxOqS6CpWq+PoP4DIHXqv+wwbWO0emc51e1eCLYl+LnNjN7Ne8Xj/Yo3ujhE8J77JvefUu402KetdNZLiWkgCdQ9FPwCGewLdLpAWZ7xBRovUDMrbrTVhmEGINwk2lhdr9cmoktiCziDYb+akZVqZyp6z5mWJvpNJG7Fb+PH8NsBnHR+m2s+mhtSdmnqniUdTsOL2DlrruyEttIv12J45gRHO3P813TiPP+1EndX3MYJYOgXe6sc/5Xh79UfH4htc42necZEA1YN7Gku/1ydZauPN3WtKvAWnWASuWGSYm/qYBfuIb7PcZLSKKEJvJymZL2+3fXQc0o9zXwHNL857MAz6kdkWBP2fxrYRUMD9n812KQ1n3+s4++V3fee677XYrSE7r1Y0V5bhs3eWg/xLAgD14//XtGYPxQxbr9RoviueX7783xkM0/zwgH4Oi9cW4BbeK362+Fjz5x22dYzx3nikWNs8Kjq3zT/02j+9l/koudXChYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=31a22772831b621004126260ceaad3bb"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="KYC Application Process">e8e3c77a8357621004126260ceaad386</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 13:41:38</sys_created_on>
+        <sys_id>6cd50bba8357621004126260ceaad36a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 14:29:23</sys_updated_on>
+        <ui_id>90dce269-7f34-41d8-8499-0e8afabda973</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0HPwdj5osnbSAiMdS20JTC6IhTpuhGTZU+S03gh/33XtuykaRtS6MMKy1N07r3SOTfnkPstkYJMyABEGI2jEe9H/X4vDHsXg2g56i+jnugzgIh0iWYJYKcBnhqB5zVTeQlst1MDzIGgUcBzY0C73Q7rQtpMsWLh2xDhK6kE1snk/qFLMmbwRgeGTLZHpXMpKbYEha03Dadjjq7IyrNIeZ4gLyob8NJPznyl83WGFRwq6URhl8DGgRaARGKmLHRJwrRgLjUFmTiTI4CixbVWRduxktrVQhO2sfIPvjwIy74YUBn3S2iP1C+ohuMZc+wWb+YuN+2+UsnB1jsRELNcuekhVjdcZ06muh5xbKma6VTlib6qN0LaCw5+j9wiCchKnSXzWlZ8u0qfbhqSc6mrlXiJKuVMtSfmnJHL3JV0tgQUVDtOWJZJ/Ugzk65lNYxUkuBR4SGIVfqEb1r5qAPGS94BbpUFc8RnFbxgRpYivuM1OLzrElvYqWLW7qXgDunvvGRSC/MSaLWFagW0ckI5zI3M3Bd8ag2e+K7rTR/2TjoM9oaqvG4PTI+cKPe2T/XPPAz74qXn3+h6Xw7OYNnkYC5BCfsKbZ8DBwnSc0BrGc+jcOeLnYUvtmn4sDhEo7D6/A/FPxeKBixJP7dthZwaIDk+FEuN7tjt2nAth6dsy8d7lx5w2wdsQ8fD0bA3oL8KTmGT0bD6xpmFlzn79mPa8ZX3ZesMkk227ioTvU66idcxdnk427mqCz5Www9L1cVnypOX8ekD9dZ/y8NfYcs8XVIJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6cd50bba8357621004126260ceaad36a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="KYC Application Process">e8e3c77a8357621004126260ceaad386</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>d2717315-7a97-4733-8417-07b21b47de2e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 16:44:07</sys_created_on>
+        <sys_id>759fe3b2835b621004126260ceaad3a4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 16:45:15</sys_updated_on>
+        <ui_id>60a7bb3c-a32e-4a4a-877c-810f702c1e74</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y227bOBT8FULPjitbvilvqY2gwaYt0ARdFE0hUCQVc0OJWpJK4gb+9z2UKFu+wLE3CZICeZN4Eecczpyh+PPB49Q79vrhyB/ESQ8P/aAb+P6oG4ZxECb+aBj6HYq9lpfhlMFIPI2MhNdbLAr7/vAQ+pSw7iA8GiZB76jXoaOjUS8Mj3w2wgmOKQ6HQVsxIhVtk0IbmTI1nyP4BuU6F3j2/Rk+RaZcUMUy7/jnr5aXYwVoDVPe8cNa177hChwzAUMv5WbsZpbbV20Uz67d+7kbf1E3Aka7ftDy2L1hGWWwcIKFZi0vxRnFRqqZd2xUAQ2KYfo1E7PGiHvNf8MiI9/3bX/CIAJiV/Uar5HLYNWcTLDBsH5BTKHcUDKVnDBdxU5Zggthxs22asDX3HCZVVMMjkU9W4oizb5U0XuLD9QbBi2FBhAst/FlZgE/uZjKu281ylOelalwnUISLBZv2EDC4sJYPA8eEyyFD0UpznNIY5QrecvLyYAlbV8LeGknQt7BoppfZ21MLPA2pBO3T6F9UjZ/x4rbKD7DZ2CyBS54yktCeDbl3rzl6ZkeC6z1MjzIa/RvYcFVwbqwoiozdgpRPDcnsOYtcxHMW05C/mAQx4O4PwyWnApJQodxMsBDEixpdIcBSIrVTcRSzEVDTJ1NUZRoD+X3Hlhqfp9lRBSUob9rULtwOuLHUgqGszXmXwLSD6c2J0v2d3ez37Vs0H/KLZm8ipXISAT7KGYIowUk22imDJXI4AkbxDXSsFttdCkRd1E1ZrTQTBYohaoBwwz0GKyu4cGVE68hut7blZyjg2udbOXKH6HJ5xcguMWOos4GK3U8JqShu03ZHSy5PVavJfdxPN6C5RBT6f8/Wb27yh/nKr2dtCJ0SaSqjq2czMbAAMNo1IHDkoKkmfn8GZi+B6TF4akqsd9qaOtQHeepJEW5QZyuEX/ietDZZMl+/0mmcqK1JBzyohsGcsfNFCxhixcE3VWhgLPwkpXbBXO27H4DwqlOlwfoJrlgWJHpKWfCbnVWpHHJ9FU9EXB/Fa0x2ZnPW3GLMm1RSbhHJIZ38jnprtZqSWcNjV0Vvh+QHFn0R4Zns5QwJaWJIa03ZSe98q6qYWwCWUNj99tSHkcU+uvHGBGsGZpijWLGMqQLAmzQSSHsiSe3+WMUDjVTnN2UR5hEKlRoyC2yH9BM3QJjKiAf8mqlTZU7oK8A5LDissdmLGy02oqNvXFFZWpSsVZNPl1+Pl+WkeETTXTQ7weDdxd9sovmd7RLlcxzF9sLOWln9z9/b0mlRulYKv0+CvuDfrcX3cxIxO7zyC+frGQ21VaL6fBT5OMgl95q07UdtJPARtt5cy76UnU4OXQOlEPlLc5UL8FJV/6nkHHwGmfOd608WStcRxXHXWzl4i8glv7uvxmyUnd1Ef/DiGmI5UftKGPrKJ/AUT5aRzlxJrIpmMcnHHjB9zj+WkcXC/TbIjrkr2zwftX36hJ5finQnSWZ+SvEee5bhT0Wr3m8dqlw8J1C7/1O4fXp+6J3Cr/+A5g/uXvuGQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=759fe3b2835b621004126260ceaad3a4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="KYC Application Process">e8e3c77a8357621004126260ceaad386</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>6da826d5-5236-40ec-bb26-3f054713d0c3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 16:45:34</sys_created_on>
+        <sys_id>8befebb2835b621004126260ceaad319</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 16:46:43</sys_updated_on>
+        <ui_id>7d5b9fc7-0800-4ee2-bdf8-607caacc1d9c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y227bOBT8FULPjitbvilvrY2gQdN2kQRdFE0hUCQVsaFELUUl8Qb+9z2UKEu+wLE3CZoCeZN4Eecczpyh+OPB4dQ5dob+xB2F0QCPXa/vue6k7/uh50fuZOy7PYqdjpPihMFIHAdawustFoV5f3jwXUpYf+QfjSNvcDTo0cnRZOD7Ry6b4AiHFPtjr6sYkYp2SZFrmTC1WCD4BuV5JvD82zN8isRcUMVS5/jHz46TYQVoNVPO8cNa177hChwyAUMv5Wbsep6Z11wrnl7b9zM7/qJuBIxmfa/jsHvNUspg4QiLnHWcBKcUa6nmzrFWBTQohunXVMxbI+5z/i8sMnFd1/RHDCIgZlWn9RrYDFbN0QxrDOsXRBfKDiWx5ITlVeyURbgQetpuqwZ8zTSXaTVF41DUs6UokvRLFb2z/EC9YdBS5ACCZSa+VC/hRxexvDuvUZ7wtEyF7RSSYLF8wxoSFhba4HlwmGAJfChIcJZBGoNMyVteTgYsSfdawEs3EvIOFs35ddrFxADvQjpx9wTaZ2XzN6y4ieIzfAYmG+CCJ7wkhGNS7iw6Tj7PpwLneRMe5DX4pzDgqmBtWEGVGTOFKJ7p97DmLbMRLDpWQu5oFIajcDj2Gk75JKLjMBrhMfEaGt1hAJJgdROwBHPRElNvUxQl2kP5vQeWmt+nKREFZejvGtQunJb4oZSC4XSN+ZeA9N2JyUnD/v5u9tuWDfrH3JDJqViJtESwj2KOMFpCMo06ZqhEBk9YI56jHHariy4l4jaq1owOmssCJVA1YJiGHo3VNTzYcuK0RDd4vZKzdLCts61c+SM0+fwCBLfYUdTZaKWOh4S0dLcpu4Mlt8fqteQ+TKdbsBxiKsP/J6s3V/njXGWwk1aENkSq6tjKyWwKDNCMBj04LClIml4snoHpe0BaHp6qEnteQ1uHajlPJSnKDeJ0jfgz24NOZw373SeZyvs8l4RDXvKWgdxxHYMlbPECr78qFHAWXrJyu2BOm+5XIJzqdHmAbqILhhWJTzgTZqvTIglLpq/qiYD7q2CNydZ8XotblGkLSsI9IjG8k89Rf7VWSzpvaeyqcF2PZMigP9I8nSeEKSl1CGm9KTvplXNVDWMzyBqa2t+W8jiiDOMMvT99nyKCc4ZinKOQsRQ6fjEC4u2ivyDb0CPkNRxr6nNPJpXGAkVSoUQqhijTwOMcDj8xTm/Mtyto77Jq7U3dW+ivAtphBWiPDVtabbVdG/tnC0+sE7FWcT5efj5rSs34iUY7Gg690ZvTPtlpszvap0pmmY3thdy2t/teYNBQqVVemmpwH/jD0bA/CG7mJGD3WeCWT0Y9m/qrdXX4SfNxkI3/mnRtB20lsNF21p6LvlQdVg69A+VQ+Y813kuoDSv/XEhbeK1z6ZtWnqwVngcVx21s5eIvIJbh7j8eslJ38yI0ptESy3fjMUYEU2MhH8FcPhhzObfmsimYxycceAn4OP5aRxdL9NsiOuTPbfR2HfjbJfL8UqA7SzJzV4jz3DcPeyxe83jt4uHge4fB273D76fvi947/PwPkIJNgxIaAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8befebb2835b621004126260ceaad319"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="KYC Application Process">e8e3c77a8357621004126260ceaad386</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>6da826d5-5236-40ec-bb26-3f054713d0c3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 16:10:30</sys_created_on>
+        <sys_id>99e7a33a831b621004126260ceaad387</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 16:44:07</sys_updated_on>
+        <ui_id>65c15428-6021-4d13-9564-7a54a9b109c0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TW2/aMBj9K8jPKEoIoMLbBEKa1rVSWyFNXRU59hfw5lzmCyVD/Pd9SZzA6EVU6sMqjSf8XexzTs653xHByZQMgfvBJBizMAjDge8PLoZBPA7jYMBDChCQPsloCjipgOWK43lDpa0Ku91MATXAo8BjVinIzH6PfS50IWm5dGNYYWshOfbJ9P6hTwqq8EYDikx3J61zIUkag8TRmxbTKUZTFtWZ58ymiCsSbfHSbc5dp/d5jh1cquAEfp/A1kDGAYEkVGrok5RmnJpclWRqlMUCkubXmSy7ibXITEM0pVstfuPLQ7+aSwCZMSdCd4ycQE05mVNDb/FmZqzq9MoFA91owiGhVprZca0ZuC6MyLNmxdBYttu5tGl21ShCuguOvofVCAKKimeFvKGV3K7zx5sW5EJktSSOoswZld2JGqNEbE0FZ0dAQq1xSotCZKuoUPlG1MsIJfVWEg9eIvNHfFOLVeZRVuH2UFXqLbA+r8tLqkRF4iteg8v7PtGlnkmq9YEKahj9shWShpijENUq1BJEtROqZaZEYT7hUxtwwPd9Z3p/8KrD4GCo2uv6yPTaUGP1d+v7Idr2BzD0/1PPvzD1thycgbLNwUKA5PoZ2C4HBlKEZyBqaPwdhTvX7C1ds0vDu8UhGPv1738o/t1QxKPX7MYmB3cd3XkIxjaajMajwTD6WbIItkXk1/8Y1fA0H1++zXqu87ZMnAGyzcRd/fGfB93G4rR2ebzbu2oaLg6jd0vDxUfKgaPx4YPwkv0f/gBLBC/gCgkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=99e7a33a831b621004126260ceaad387"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e8e3c77a8357621004126260ceaad386"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e8e3c77a8357621004126260ceaad386^sys_idNOT IN07e6a7b6831b621004126260ceaad3b5,17a32bb2831b621004126260ceaad3a7"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">cfe6a7b6831b621004126260ceaad3b4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="KYC Application Process">e8e3c77a8357621004126260ceaad386</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 16:06:16</sys_created_on>
+        <sys_id>07e6a7b6831b621004126260ceaad3b5</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-16 03:27:54</sys_updated_on>
+        <ui_id>6da826d5-5236-40ec-bb26-3f054713d0c3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnWZCsR2tfisBBgABtAyRBLk0grEjKZkuJKknFUQ3/e5d62Ebiog6aY2/mcHc5M96xN0Q1tm6suVPnxohlRebfHj0iKofh5w0RjMzJDJIiCYOERtM0mgbB9GMc5mmUh1MWAY9T4pEKSo6VVFVMWKEqhJ5ANg7bbOI4SNMwZJMIEj6Jk5xP8qBIJiwNo9mHmM14nvtQ11phT2YsWL7dPjRBEDHNv3NqOcN5TJhaQnv/zmPpSkg8D9Jr0KjEck3mmxdXp1ohIecSSxcHXhyxx7a1g4zVoloO589D6+0IKs0clWngEf5secWQ8rwAabhHSqgYWKVbMre6QUBzYNeVbHcVK1FZnEZc7bMRv7ibFASusuCoi/L+dnfMBo97uLgAC0ilobbRQyldKUG56R1hvIBG2sUh1hdc153KrsVCLsduJZuy+tqbQXYDxq8UkcYgCV47pY77IKS4Xan1zcjyUlSdK8OlVBTk7gQWvcsb6/hsCJe8xEFZiWuAjmZuF0TXjFxKfynx4BdSrfFRt/8+UEfcR2PBv0T8ooPvQQun4guOwWbcBZMZqkU9auseJ1uPmNYsJBiz14jmZj8bx7BXPGjLentcSzfoHB9+4oOMrTckrwigCGc0PL5uEB1ZrawD9vG7Mmc3w7Z/ep2iF7dvC8MJ7F6F4azf8T/zfksuwr/kYkBOCkaS/M/FP+fC0czBCJp1/yE4zv00vWMwHt1i94/uzKbCILc7h12N/1zuosWNEvQQWiv9w6naY9vf2aty5AMHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5ba32bb2831b621004126260ceaad3a6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="KYC Application Process">e8e3c77a8357621004126260ceaad386</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 15:52:04</sys_created_on>
+        <sys_id>17a32bb2831b621004126260ceaad3a7</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-16 03:27:54</sys_updated_on>
+        <ui_id>d2717315-7a97-4733-8417-07b21b47de2e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXW/aMBT9K8jPASWEsMHLVFFVqrQNqa36snbRjX0D1kyc2U4pQ/z3XecD0Eo1qm1ve8PH916fc+xDtkxXrqycvdMX1spFwaZfHgMmC4/R7y2Tgk3ZBJI8icKEx8NxPAzD4ftRlI3jLBqKGHA0ZgErYIVUyXUhpJO6IOgJVOWx7XY0CsfjKBL9GBLsj5IM+1mYJ30xjuLJu5GYYJYNoCyNpp7UOnC42z1UYRiLBkXxdX7To5lC2lLB5v4fjOZLqYTB1oISDClyaNh0+8vWuZYoyFBR6ezIkxM2uU3pIeuMLBbt+mPbetuB2ghPZRgGDJ8dFgKJRA7KYsBWUAhw2mzY1JmKAIMg5oXa7CuWsnA0jfnaZyt/oJ8Uhr4yR9LFsdndL9PW5wbOL8EBUam4q0xbypdacrSNIwJzqJSbHWNNwbysVdYtDjLVdWtVrYrPjRlsP6C7VkIqSySw9Eo991ZIfrvU65uO5ZUsalfaTaU5qP0KHHmXVc7z2TJUuKJB6YounRxN/c3Lupm4rAYLRYtBrvSaDvU5GAD3xAdkLAyuCL+s4Xsw0qv4RGOomd6CTS03suy01YezXcDsxs4UWHvQSOam3yvPsFHcaksbe3xLPeiCDn7CVsYuaBOYh5BHEx6dfm4Qn3haaQ0cYnhte26JPQ4We93T//AyUq+VvS0eZ/B9EY9e8+pfV/KWpES/SUqLnBWVJPmflD9OiqeZgZU8rb8uNM7/Wf3FqDz6p94cujebS0vc7jx23X3T/MaGXpTkx9Bam29e1QHb/QTUuExoHQcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e8e3c77a8357621004126260ceaad386"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e8e3c77a8357621004126260ceaad386"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e8e3c77a8357621004126260ceaad386</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 13:39:16</sys_created_on>
+        <sys_id>0245c7fa8357621004126260ceaad344</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="KYC express" source="x_956524_kyc_exp_0">a1424a768313621004126260ceaad39c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 13:39:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e8e3c77a8357621004126260ceaad386</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 13:39:16</sys_created_on>
+        <sys_id>0645c7fa8357621004126260ceaad33d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="KYC express" source="x_956524_kyc_exp_0">a1424a768313621004126260ceaad39c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 13:39:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e8e3c77a8357621004126260ceaad386"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e8e3c77a8357621004126260ceaad386"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e8e3c77a8357621004126260ceaad386"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e8e3c77a8357621004126260ceaad386"/>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ea14cef68313621004126260ceaad335" label="KYC case" max_length="40" name="x_956524_kyc_exp_0_kyc_case" type="collection">
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive_on_update="false" label="Rejected" sequence="1" value="rejected"/>
+                <element inactive_on_update="false" label="Choice" sequence="0" value="choice"/>
+            </choice>
+        </element>
+        <element label="PAN Number" max_length="40" name="pan_number" type="string"/>
+        <element label="status" max_length="40" name="choice" type="string"/>
+        <element label="Assigned to" max_length="40" name="assigned_to" type="string"/>
+        <element label="Customer Name" max_length="40" name="customer_name" type="string"/>
+        <element label="Customer" max_length="32" name="customer" reference="x_956524_kyc_exp_0_kyc_case" type="reference"/>
+        <element label="Status" max_length="40" name="statu0" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Rejected" sequence="0" value="rejected"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="customer"/>
+        </index>
+    </element>
+</database>

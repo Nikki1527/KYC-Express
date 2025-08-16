@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>28000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>e8e3c77a8357621004126260ceaad386</copied_from>
+        <copied_from_name>KYC Application Process</copied_from_name>
+        <description>Automates the KYC process from submission to approval</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>copy_of_kyc_application_process</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛KYC case Record","reference":"x_956524_kyc_exp_0_kyc_case","reference_display":"KYC case","type":"reference","base_type":"reference","choices":[{"order":0.0}],"usedInstances":{"90dce269-7f34-41d8-8499-0e8afabda973":["record"]},"attributes":{"":""}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Copy of KYC Application Process</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 15:29:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b49e93fa83d7621004126260ceaad33e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Copy of KYC Application Process</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="KYC express" source="x_956524_kyc_exp_0">a1424a768313621004126260ceaad39c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_update_name>sys_hub_flow_b49e93fa83d7621004126260ceaad33e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 15:29:49</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2025-08-15 08:29:49">1d9e5ffa83d7621004126260ceaad3f6</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=b49e93fa83d7621004126260ceaad33e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b49e93fa83d7621004126260ceaad33e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b49e93fa83d7621004126260ceaad33e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b49e93fa83d7621004126260ceaad33e^sys_idNOT IN749e5ffa83d7621004126260ceaad384"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b49e93fa83d7621004126260ceaad33e</id>
+        <name>Copy of KYC Application Process</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 15:29:47</sys_created_on>
+        <sys_id>749e5ffa83d7621004126260ceaad384</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 15:29:47</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=749e5ffa83d7621004126260ceaad384"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b49e93fa83d7621004126260ceaad33e^sys_idNOT IN419e5ffa83d7621004126260ceaad38d,789e5ffa83d7621004126260ceaad389"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Copy of KYC Application Process">b49e93fa83d7621004126260ceaad33e</model>
+        <model_id>b49e93fa83d7621004126260ceaad33e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b49e93fa83d7621004126260ceaad33e</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 15:29:47</sys_created_on>
+        <sys_id>419e5ffa83d7621004126260ceaad38d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 15:29:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=419e5ffa83d7621004126260ceaad38d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Copy of KYC Application Process">b49e93fa83d7621004126260ceaad33e</model>
+        <model_id>b49e93fa83d7621004126260ceaad33e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b49e93fa83d7621004126260ceaad33e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 15:29:47</sys_created_on>
+        <sys_id>789e5ffa83d7621004126260ceaad389</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 15:29:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=789e5ffa83d7621004126260ceaad389"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b49e93fa83d7621004126260ceaad33e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b49e93fa83d7621004126260ceaad33e"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=b49e93fa83d7621004126260ceaad33e^sys_idNOT IN0d9e5ffa83d7621004126260ceaad3a4"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Copy of KYC Application Process">b49e93fa83d7621004126260ceaad33e</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 15:29:48</sys_created_on>
+        <sys_id>0d9e5ffa83d7621004126260ceaad3a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 15:29:48</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/91Z227jNhD9FUFPLeACuvgS521rZ9GgaYLa3hZFkAqUSNpEaMqVKCXeIP9eUhfrRju+yIskT4lJkXPmcObMULp/0SlwEdUv9ZHPIOHEZ3pHJ4yjgAE6W6+QmPLyqVDMLQGDgPvBWr/EgIaoo+PAX87QckUBR5tBP4Ao0C9Nw+joMaARmq7Dayg2E1swsKxsq2ePiLF/r/4UvyAJxW7rvyqD3oJQGCCmX94/dPQVCMQuXNp42eC9IewxNVF9mEjD/T4AEAHDs03bsgzDuuiabt92TQvaALlYrFJxoQDLFbTIsZv6cjlRJgI9c8QgghuWmmQGCMA7RouBhXAu9WkJnkPyXVjuGnKzAGEkPPRQOrv56WTspcN4DDiY8iDyeBSgnByfeChMuYEIg4jyUXksfeBulfibLOHApflqn0ZLdpvSom82yA9LjEShAIFW0lWJXRiXUTJd+E+THORXwhJaMiep7wG6+QU4D4gbcQnnRX8CjIcO9x0AoVPi/FKXG0tefIjouLAnxsl8jgKHsFXEQ/21o4frcERBGBaoBV3Of5E0mvqQrXYSh1Nv5TovICv+xeMkzkP7tVPkTBAxscDZHGszcxIiN5TfkFDgu3/Rcc5W5gLOQ2cSMc1nmhcFgiauifDQ8t21BJUMKXy9BPPMDzxFFHm8FFP4W1j+9QcJQ8LmJfQb48lI0zpdlyGkXJxm9KFN2WiSHtf8qclHC9phmhi7CFvGQCqHadguNo2B0QMY2obhWSXtaMLbipvXgqSiIfngWfSjHfUoEmFX4NRPJ3PIKCfSXmEfV3MmJ+ZVJWInQTNbgma9NrXUPkhMNxGdDo+rgb3LtZoG5zl3rAgDGAOxAuY+Hq6pe8oppv6TEO4jpBT7AZoHfsRgXdLknhoRfytPtCSiLvAed5stntB+yg7y5/cmqAXteSgDtj6LlNrYdIeoiwyhoLYQT7c3HLoesDAe9AfIMmtSWgBTov1cEvpGxMSqkNsmp8qgj1W5coCQngCwIaoHAzxdTrOYVoppOvdRZfNpgZgjwAcOlcLYUM85JRDlc+1KR8N0XIhF+/KBL4ZezxwMvIG4wQn5wF3kArNr9cBw0LcvejX5aIDbBZwruCoLyk069ENudCJMEmxbhOVbOvUObncfK0VCxLmso4e3F8nzIDVQKvTyZLVEzvxAk6eiXRcPalMkynbyzqC1dsPni0ajIUz/KsYrpmWjeuuzXxRw2rxDMnGl2YeaLVDeWx9UC5K4yvoZLpaoe9EbYlstZ3iokrMC3nbgn6cv2jOK4q3xqGqQ9s3aWJn8WzuaI/KwFmHlVmdHL9YWKWbrpFjnI8U+uf/L03jrbfoYsB+6Hibtz/FF0WfI8bFS9AnWsvewCGruWuMLJOiloukXpjRpt80ylHbvjaoohrWsi2qv4Ema626PfU1MaMEPcfw8Va8WCud+D4DgAPR69pZGflh/D6CC+IYHn6cGHhxdsSpYdxbCw/at76kshaXkqwbTnkWuVa/Vle40r5W17i2vT69iu95iKFB8xPo0y95i1+pRwpGTpH0lObMvjLsUcKv+1b8FPDvDXr9ndZ3Hteeg55VjJP95QPVp6fd/Rlo2c6oeetgDQwtt+TxtGCU9zNmpecAVJJU1L1mm3aYTBS+7VC8ldh/Ru/hIX6RPzQFMqDhRJ2U69KMgcXlyNbqbjJ2/v8xGv11NnMnVdDa5Hs2uxkfmSMbaV4IozN8IrcTJIOi4UgFUOfTwP9u3Os3SIQAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=b49e93fa83d7621004126260ceaad33e^sys_idNOT INc59e5ffa83d7621004126260ceaad3a3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Copy of KYC Application Process">b49e93fa83d7621004126260ceaad33e</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 15:29:48</sys_created_on>
+        <sys_id>c59e5ffa83d7621004126260ceaad3a3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 15:29:48</sys_updated_on>
+        <ui_id>90dce269-7f34-41d8-8499-0e8afabda973</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0HPwdj5osnbSAiMdS20JTC6IhTpuhGTZU+S03gh/33XtuykaRtS6MMKy1N07r3SOTfnkPstkYJMyABEGI2jEe9H/X4vDHsXg2g56i+jnugzgIh0iWYJYKcBnhqB5zVTeQlst1MDzIGgUcBzY0C73Q7rQtpMsWLh2xDhK6kE1snk/qFLMmbwRgeGTLZHpXMpKbYEha03Dadjjq7IyrNIeZ4gLyob8NJPznyl83WGFRwq6URhl8DGgRaARGKmLHRJwrRgLjUFmTiTI4CixbVWRduxktrVQhO2sfIPvjwIy74YUBn3S2iP1C+ohuMZc+wWb+YuN+2+UsnB1jsRELNcuekhVjdcZ06muh5xbKma6VTlib6qN0LaCw5+j9wiCchKnSXzWlZ8u0qfbhqSc6mrlXiJKuVMtSfmnJHL3JV0tgQUVDtOWJZJ/Ugzk65lNYxUkuBR4SGIVfqEb1r5qAPGS94BbpUFc8RnFbxgRpYivuM1OLzrElvYqWLW7qXgDunvvGRSC/MSaLWFagW0ckI5zI3M3Bd8ag2e+K7rTR/2TjoM9oaqvG4PTI+cKPe2T/XPPAz74qXn3+h6Xw7OYNnkYC5BCfsKbZ8DBwnSc0BrGc+jcOeLnYUvtmn4sDhEo7D6/A/FPxeKBixJP7dthZwaIDk+FEuN7tjt2nAth6dsy8d7lx5w2wdsQ8fD0bA3oL8KTmGT0bD6xpmFlzn79mPa8ZX3ZesMkk227ioTvU66idcxdnk427mqCz5Www9L1cVnypOX8ekD9dZ/y8NfYcs8XVIJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c59e5ffa83d7621004126260ceaad3a3"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=b49e93fa83d7621004126260ceaad33e"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=b49e93fa83d7621004126260ceaad33e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b49e93fa83d7621004126260ceaad33e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b49e93fa83d7621004126260ceaad33e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b49e93fa83d7621004126260ceaad33e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 15:29:47</sys_created_on>
+        <sys_id>819e5ffa83d7621004126260ceaad38c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="KYC express" source="x_956524_kyc_exp_0">a1424a768313621004126260ceaad39c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 15:29:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b49e93fa83d7621004126260ceaad33e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-15 15:29:47</sys_created_on>
+        <sys_id>c19e5ffa83d7621004126260ceaad38f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="KYC express" source="x_956524_kyc_exp_0">a1424a768313621004126260ceaad39c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="KYC express">a1424a768313621004126260ceaad39c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-15 15:29:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b49e93fa83d7621004126260ceaad33e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b49e93fa83d7621004126260ceaad33e"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b49e93fa83d7621004126260ceaad33e"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b49e93fa83d7621004126260ceaad33e"/>
+</record_update>
